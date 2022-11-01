@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Individu 3 PemWeb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-card">
+        <div class="top">
+          <div class="card-image">
+            <img src="profil.jpg" alt="profil" width="150" height="150" />
+          </div>
+          <div class="card-name">
+            <h3>Basrunki Siburian</h3>
+            <p>Teknik Informatika</p>
+
+            <button onclick="about()" id="sembunyi">about me</button
+            ><button onclick="hidepesan()">Send Comment</button
+            ><button onclick="sosmed()">Social Media</button>
+          </div>
+        </div>
+        <div class="bottom">
+          <div id="about">
+            <p>
+              Hai Saya basrunki siburian mahasiswa dari Institut Teknologi
+              sumatera
+            </p>
+          </div>
+          <div id="message" class="pesan">
+            <div class="input" id="input">
+              <input type="text" id="pesan" />
+              <button onclick="getPesan()">Kirim</button>
+            </div>
+            <div class="ouput" id="output">
+              <p></p>
+            </div>
+          </div>
+          <div id="sosmed">
+            <p>Anda bisa Follow Instagram saya : basrunki_</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- inner html -->

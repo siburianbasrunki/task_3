@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+.container{
+    margin-top: 150px;
+}
+
+.container-card {
+    width: 600px;
+    height: max-content;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: rgb(161, 23, 23);
+    border-radius: 20px;
+
+
+}
+
+.top {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.top div {
+    margin: 20px;
+}
+
+.card-image img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+}
+
+.card-name h3 {
+    font-size: 2rem;
+}
+
+.card-name h3,
+.card-name p {
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: pink;
+    color: black;
+    text-transform: uppercase;
+
+
+}
+#about,#sosmed,#input{
+    display: none;
+}
+#output {
+    display: block;
+}
+button:hover {
+    cursor: pointer;
+}
+.bottom {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+input[type="text"] {
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: fit-content;
+}
+.output {
+    border: 1px solid black;
+    height: 200px;
+}
+
+@media screen and (max-width:720px) {
+    .container-card {
+        width: fit-content;
+        text-align: center;
+    }
+    .top {
+        flex-direction: column;
+    }
+    
+}
